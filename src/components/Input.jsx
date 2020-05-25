@@ -7,7 +7,21 @@ export default class Input extends React.Component {
 
     this.state = {
       currentTyping: '',
-      tasks: [],
+      tasks: [
+        'Cooking',
+        'buy food',
+        'go to the gym',
+        'meditate',
+        'make my bed',
+        'take a cold shower',
+        'do at least 2 hour of deep work',
+        'read for 1 hour',
+        'send an email to Jessica',
+        'walk the dog',
+        'buy a new shirt',
+        'cancel my appointment to the dentist',
+        'book a table at the restaurant',
+      ],
     }
   }
 
