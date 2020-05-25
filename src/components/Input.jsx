@@ -1,5 +1,6 @@
 import React from 'react'
 import DisplayTask from './DisplayTask'
+import SearchBar from './SearchBar'
 
 export default class Input extends React.Component {
   constructor(props) {
@@ -54,8 +55,13 @@ export default class Input extends React.Component {
     return (
       <fieldset>
         <legend>Enter a task to complete!</legend>
-        <input value={this.state.currentTyping} onChange={this.handleChange} />
-        {<button onClick={this.handleSubmit}>Add new task</button>}
+        <input
+          placeholder='Add a new task'
+          value={this.state.currentTyping}
+          onChange={this.handleChange}
+        />
+        <button onClick={this.handleSubmit}>Add new task</button>
+        <SearchBar />
         <DisplayTask tasks={this.state.tasks} deleteTask={this.handleDelete} />
       </fieldset>
     )
