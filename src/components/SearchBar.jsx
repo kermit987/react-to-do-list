@@ -13,7 +13,7 @@ export default class SearchBar extends React.Component {
       <div>
         <input
           type='text'
-          // onChange={this.handleChange}
+          onChange={this.props.handleSearch}
           placeholder='Search...'
         />
         <button>Search task</button>
