@@ -87,7 +87,7 @@ export default class Input extends React.Component {
     let tmp = []
 
     if (e.target.value) {
-      this.state.tasks.forEach((value) => {
+      this.state.copyTasks.forEach((value) => {
         const task = {}
         task.description = value
         tasks.push(task)
@@ -100,6 +100,7 @@ export default class Input extends React.Component {
         tmp.push(value.description)
       })
       this.setState({ tasks: tmp })
+      console.log(this.state.tasks)
     } else {
       this.setState({ tasks: this.state.copyTasks })
     }
